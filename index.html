@@ -26,13 +26,13 @@
                     <h2 class="card-title text-2xl font-bold">Triangle</h2>
                     <p>Area (A) = 0.5 x b x h</p>
                     <div class="flex gap-3 items-center mt-3 mb-7">
-                        <input name="b" type="text" placeholder="b" class="input h-6 w-16 bg-stone-100">
+                        <input id="b" name="b" type="text" placeholder="b" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
-                        <input name="h" type="text"  placeholder="h" class="input h-6 w-16 bg-stone-100">
+                        <input id="h" name="h" type="text"  placeholder="h" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
                     </div>
                     <div class="card-actions">
-                        <button class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
+                        <button onclick=" traiangle()" class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -44,15 +44,15 @@
                 </figure>
                 <div class="card-body items-center text-center">
                     <h2 class="card-title text-2xl font-bold">Rectangle</h2>
-                    <p>Area (A) = w x I</p>
+                    <p>Area (A) = w x l</p>
                     <div class="flex gap-3 items-center mt-3 mb-7">
-                        <input name="b" type="text" placeholder="w" class="input h-6 w-16 bg-stone-100">
+                        <input id="w" name="b" type="text" placeholder="w" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
-                        <input name="h" type="text"  placeholder="l" class="input h-6 w-16 bg-stone-100">
+                        <input id="l" name="h" type="text"  placeholder="l" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
                     </div>
                     <div class="card-actions">
-                        <button class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
+                        <button onclick="Rectangle()" class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -66,13 +66,13 @@
                     <h2 class="card-title text-2xl font-bold">Parallelogram</h2>
                     <p>Area (A) = b x h</p>
                     <div class="flex gap-3 items-center mt-3 mb-7">
-                        <input name="b" type="text" placeholder="b" class="input h-6 w-16 bg-stone-100">
+                        <input id="s" name="b" type="text" placeholder="b" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
-                        <input name="h" type="text"  placeholder="h" class="input h-6 w-16 bg-stone-100">
+                        <input id="f" name="h" type="text"  placeholder="h" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
                     </div>
                     <div class="card-actions">
-                        <button class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
+                        <button onclick="Parallelogram()" class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -86,13 +86,13 @@
                     <h2 class="card-title text-2xl font-bold">Rhombus</h2>
                     <p>Area (A) = 0.5 x d1 x d2</p>
                     <div class="flex gap-3 items-center mt-3 mb-7">
-                        <input name="b" type="text" placeholder="d1" class="input h-6 w-16 bg-stone-100">
+                        <input id="d1" name="b" type="text" placeholder="d1" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
-                        <input name="h" type="text"  placeholder="d2" class="input h-6 w-16 bg-stone-100">
+                        <input id="d2" name="h" type="text"  placeholder="d2" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
                     </div>
                     <div class="card-actions">
-                        <button class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
+                        <button onclick="Rhombus()" class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -106,13 +106,13 @@
                     <h2 class="card-title text-2xl font-bold">Pentagon</h2>
                     <p>Area (A) = 0.5 x p x d</p>
                     <div class="flex gap-3 items-center mt-3 mb-7">
-                        <input name="b" type="text" placeholder="p" class="input h-6 w-16 bg-stone-100">
+                        <input id="k" name="b" type="text" placeholder="p" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
-                        <input name="h" type="text"  placeholder="b" class="input h-6 w-16 bg-stone-100">
+                        <input id="j" name="h" type="text"  placeholder="b" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
                     </div>
                     <div class="card-actions">
-                        <button class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
+                        <button onclick="Pentagon()" class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -124,15 +124,15 @@
                 </figure>
                 <div class="card-body items-center text-center">
                     <h2 class="card-title text-2xl font-bold">Ellipse</h2>
-                    <p>Area (A) =  πab</p>
+                    <p>Area (A) =  3.1416ab</p>
                     <div class="flex gap-3 items-center mt-3 mb-7">
-                        <input name="b" type="text" placeholder="a" class="input h-6 w-16 bg-stone-100">
+                        <input id="a" name="b" type="text" placeholder="a" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
-                        <input name="h" type="text"  placeholder="b" class="input h-6 w-16 bg-stone-100">
+                        <input id="x" name="h" type="text"  placeholder="b" class="input h-6 w-16 bg-stone-100">
                         <p>cm</p>
                     </div>
                     <div class="card-actions">
-                        <button class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
+                        <button onclick="Ellipse()" class="btn bg-sky-500 text-white hover:bg-sky-800 btn-wide">Calculate</button>
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@
         <section class="border-gray-200 border rounded-lg w-96 px-5 pt-6">
             <h4 class="font-bold underline text-2xl text-center">Area Calculation</h4>
             <div class="flex justify-center mt-6">
-                <ul>
+                <ul id="ol-list" class="list-decimal">
 
                 </ul>
             </div>
