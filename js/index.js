@@ -144,3 +144,31 @@ function Pentagon() {
     }
 }
 
+// Ellipse section
+function Ellipse() {
+    const hight = document.getElementById('a').value;
+    const width = document.getElementById('x').value;
+    const hightNum = parseFloat(hight);
+    const widthNum = parseFloat(width);
+
+    if (isNaN(hightNum) === false && isNaN(widthNum) === false) {
+    const area = 3.1416 * hightNum * widthNum;
+
+    const areaCalculation = document.getElementById('ol-list');
+    const li = document.createElement('li');
+    li.innerHTML = `
+    <div class = "flex items-center gap-3">
+    <p>Ellipse</p>
+    <p>${area} cm^2</p>
+    <button class="btn bg-sky-500 text-white hover:bg-sky-800">Covert to m^2</button>
+    </div>
+    `;
+
+    areaCalculation.appendChild(li);
+    }
+    else{
+        window.alert('please enter number only');
+        document.getElementById('a').value = '';
+        document.getElementById('x').value = '';
+    }
+}
